@@ -618,7 +618,7 @@ function library:CreateWindow(name, size, hidebutton)
             sector.Label.TextSize = 15
             updateevent.Event:Connect(function(theme)
                 local size = textservice:GetTextSize(sector.name, 15, theme.font, Vector2.new(2000, 2000))
-                sector.Label.Size = UDim2.fromOffset(math.clamp(textservice:GetTextSize(sector.name, 15, theme.font, Vector2.new(200,300)).X + 13, 0, sector.Main.Size.X.Offset), size.Y)
+                sector.Label.Size = UDim2.fromOffset(math.clamp(textservice:GetTextSize(sector.name, 15, theme.font, Vector2.new(200,300)).X + 15, 15, sector.Main.Size.X.Offset), size.Y)
                 sector.Label.Font = theme.font
             end)
 
